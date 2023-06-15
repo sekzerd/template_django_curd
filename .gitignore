@@ -1,0 +1,15 @@
+#vscode
+/.vscode/
+
+#pycache
+/demo_django/__pycache__/
+/app/__pycache__/
+
+#django migrate
+/app/migrations/
+
+#venv
+/Include
+/Lib
+/Scripts
+pyvenv.cfg

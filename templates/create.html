@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+
+<head>
+    <title>app</title>
+</head>
+
+<body>
+    <form method="post" action="/do_create/">
+{% csrf_token %}
+            <div class="col">
+                <div class="row">
+                    <div class="lable">
+                        id:
+                    </div> <input type="text" name="id" />
+                </div>
+                <div class="row">
+                    <div class="lable">
+                        name:
+                    </div> <input type="text" name="name" />
+                </div>
+                <div class="row">
+                    <div class="lable">
+                        age:
+                    </div> <input type="text" name="age" />
+                </div>
+                <div class="row">
+                    <div class="lable">
+                        address:
+                    </div> <input type="text" name="address" />
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <input type="submit" value="create"/>
+                    </div>
+    
+            </div>
+
+
+        </div>
+    </form>
+</body>
+<style>
+    .lable {
+        text-align: center;
+        width: 4rem;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+</html>

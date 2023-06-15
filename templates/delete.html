@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+
+<head>
+    <title>app</title>
+</head>
+
+<body>
+    <form method="post" action="/do_delete/">
+{% csrf_token %}
+            <div class="col">
+                <div class="row">
+                    <div class="lable">
+                        id:
+                    </div> <input type="text" name="id" value="{{user.id}}"/>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <input type="submit" value="delete"/>
+                    </div>
+    
+            </div>
+
+
+        </div>
+    </form>
+</body>
+<style>
+    .lable {
+        text-align: center;
+        width: 4rem;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+</html>

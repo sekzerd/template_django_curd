@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+
+<head>
+    <title>app</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+        {%for i in data%}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.address}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+
+
+</body>
+<style>
+
+</style>
+
+</html>
