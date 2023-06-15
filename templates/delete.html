@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <div class="center">
     <form method="post" action="/do_delete/">
 {% csrf_token %}
             <div class="col">
@@ -14,19 +15,37 @@
                         id:
                     </div> <input type="text" name="id" value="{{user.id}}"/>
                 </div>
-
                 <div class="row">
+                    <div class="lable">
+                        name:
+                    </div> <input type="text" name="name" value="{{user.name}}"/>
+                </div>
+                <div class="row">
+                    <div class="lable">
+                        age:
+                    </div> <input type="text" name="age" value="{{user.age}}"/>
+                </div>
+                <div class="row">
+                    <div class="lable">
+                        address:
+                    </div> <input type="text" name="address"value="{{user.address}}" />
+                </div>
+                <div class="row center">
                     <div class="row">
                         <input type="submit" value="delete"/>
                     </div>
     
             </div>
-
-
         </div>
-    </form>
+    </form>  
+ </div>
 </body>
 <style>
+    .center {
+        display: flex;
+        direction: column;
+        justify-content: center;
+    }
     .lable {
         text-align: center;
         width: 4rem;

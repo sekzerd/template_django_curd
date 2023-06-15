@@ -23,8 +23,10 @@ def update(request, id):
     return render(request, "update.html", context)
 
 
-def delete(request):
-    return render(request, "delete.html")
+def delete(request, id):
+    user = User.objects.get(id=id)
+    context = {"user": user}
+    return render(request, "delete.html", context)
 
 
 def do_update(request):

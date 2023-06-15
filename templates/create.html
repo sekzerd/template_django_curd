@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <div class="center">
     <form method="post" action="/do_create/">
 {% csrf_token %}
             <div class="col">
@@ -29,18 +30,22 @@
                         address:
                     </div> <input type="text" name="address" />
                 </div>
-                <div class="row">
+                <div class="row center">
                     <div class="row">
                         <input type="submit" value="create"/>
                     </div>
     
-            </div>
-
-
+                </div>
         </div>
     </form>
+</div>
 </body>
 <style>
+    .center {
+        display: flex;
+        direction: column;
+        justify-content: center;
+    }
     .lable {
         text-align: center;
         width: 4rem;

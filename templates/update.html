@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <div class="center">
     <form method="post" action="/do_update/">
 {% csrf_token %}
             <div class="col">
@@ -29,7 +30,7 @@
                         address:
                     </div> <input type="text" name="address"value="{{user.address}}" />
                 </div>
-                <div class="row">
+                <div class="row center">
                     <div class="row">
                         <input type="submit" value="update"/>
                     </div>
@@ -39,8 +40,14 @@
 
         </div>
     </form>
+</div>
 </body>
 <style>
+    .center {
+        display: flex;
+        direction: column;
+        justify-content: center;
+    }
     .lable {
         text-align: center;
         width: 4rem;
